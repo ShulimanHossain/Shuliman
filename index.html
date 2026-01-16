@@ -3,89 +3,114 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Your Name | Portfolio</title>
+    <title>Shuliman Hossain | Portfolio</title>
 
-    <!-- Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ================= HERO ================= -->
-<section class="hero">
-    <h1>Your Name</h1>
-    <p class="tagline">ML Engineer & AI Enthusiast</p>
+<!-- Background Shapes -->
+<div class="bg-shape shape-1"></div>
+<div class="bg-shape shape-2"></div>
+<div class="bg-shape shape-3"></div>
 
-    <div class="socials">
-        <a href="https://github.com/ShulimanHossain" target="_blank">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href="https://linkedin.com/in/ShulimanHossain" target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a>
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+    <div class="nav-container">
+        <div class="logo">Shuliman Hossain</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Hi, I'm Shuliman Hossain</h1>
+        <p>AI & Machine Learning enthusiast focused on building intelligent, data-driven systems.</p>
+ 
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/shuliman-hossain/" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/ShulimanHossain/" class="social-btn"><i class="fab fa-github"></i></a>
+        </div>
     </div>
 </section>
 
 <!-- ================= ABOUT ================= -->
-<section class="section">
-    <h2>About Me</h2>
-    <p class="about">
-        I am passionate about technology and enjoy solving real-world problems
-        using machine learning, data science, and software engineering.
-        I love learning new tools and building meaningful projects.
-    </p>
+<section id="about" class="section about">
+    <h2 class="center-title">About Me</h2>
+
+    <div class="about-box">
+        <p>
+            I am a passionate <span>AI & Machine Learning</span> learner with a strong interest in
+            data-driven problem solving. I enjoy building intelligent systems, exploring data,
+            and turning ideas into real-world applications.
+        </p>
+
+        <p>
+            Currently, I focus on <span>Python, Data Science, Machine Learning</span>, and backend
+            development while continuously improving my problem-solving and analytical skills.
+        </p>
+    </div>
 </section>
 
 <!-- ================= SKILLS ================= -->
-<section class="section">
-    <h2>Skills</h2>
-    <div class="skills">
-        <span>Python</span>
-        <span>Machine Learning</span>
-        <span>Data Science</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Git & GitHub</span>
+<section id="skills" class="section">
+    <h2 class="center-title">Skills & Expertise</h2>
+
+    <div class="skills-box-container">
+        <div class="skills-box">
+            <h3>Technical & Tools</h3>
+            <ul>
+                <li>Python</li>
+                <li>Pandas & NumPy</li>
+                <li>Scikit-learn</li>
+                <li>MySQL</li>
+                <li>Git & GitHub</li>
+                <li>Jupyter notebook</li>
+                <li>Flask</li>
+            </ul>
+        </div>
+
+        <div class="skills-box">
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Analytical Thinking</li>
+                <li>Team Collaboration</li>
+                <li>Communication</li>
+                <li>Team Leadership</li>
+            </ul>
+        </div>
     </div>
 </section>
 
 <!-- ================= PROJECTS ================= -->
-<section class="section">
-    <h2>Projects</h2>
+<section id="projects" class="section">
+    <h2 class="center-title">Featured Projects</h2>
 
-    <div class="projects" id="project-container">
-        <!-- Project Cards -->
-        <div class="project">
-            <h3>Project One</h3>
-            <p>Short description of the project.</p>
-            <a href="https://github.com/ShulimanHossain/project1" target="_blank">
-                View Project →
-            </a>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Online Book Shop</h3>
+            <p>An Online Book Shop Web Application built with Flask, MySQL, HTML, and CSS, designed as a database project. It allows users to browse books, manage a shopping cart, place orders, and write reviews, while administrators can manage inventory, revenue, and users.</p>
+            <a href="https://github.com/ShulimanHossain/Online-Book-Shop" target="_blank">View Project ↗</a>
         </div>
 
-        <div class="project">
-            <h3>Project Two</h3>
-            <p>Short description of the project.</p>
-            <a href="https://github.com/ShulimanHossain/project2" target="_blank">
-                View Project →
-            </a>
+        <div class="project-card">
+            <h3>Smart Café Management System</h3>
+            <p>The Smart Café Management System is a web-based application built using Flask and MySQL that automates café operations such as table booking, order management, ingredient stock tracking, and payment handling.</p>
+            <a href="https://github.com/ShulimanHossain/Smart-Coffee-Shop-Interactive-Ordering-Analysis-System-" target="_blank">View Project ↗</a>
         </div>
 
-        <div class="project">
-            <h3>Project Three</h3>
-            <p>Short description of the project.</p>
-            <a href="https://github.com/ShulimanHossain/project3" target="_blank">
-                View Project →
-            </a>
-        </div>
-
-        <div class="project">
-            <h3>Project Four</h3>
-            <p>Short description of the project.</p>
-            <a href="https://github.com/ShulimanHossain/project4" target="_blank">
-                View Project →
-            </a>
+        <div class="project-card hidden">
+            <h3>DNA Pattern Matching Algorithm Analyzer</h3>
+            <p>The DNA Pattern Matching Algorithm Analyzer is a C++ program designed to compare and analyze different string-matching algorithms on DNA sequences. It allows users to test how efficiently various algorithms—Naive, Knuth-Morris-Pratt (KMP), and Boyer-Moore—can detect a specific DNA pattern within a DNA sequence. This project helps visualize pattern occurrence positions, algorithmic performance, and execution time comparison, making it useful for both bioinformatics and algorithm analysis studies.</p>
+            <a href="https://github.com/ShulimanHossain/DNA-Pattern-Matching-Algorithm-Analyzer" target="_blank">View Project ↗</a>
         </div>
     </div>
 
