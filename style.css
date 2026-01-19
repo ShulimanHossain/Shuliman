@@ -23,9 +23,9 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(8, 91, 173, 0.144);
+    background: rgba(137, 148, 158, 0.144);
     backdrop-filter: blur(14px);
-    border-bottom: 1px solid rgba(36, 33, 33, 0.08);
+    border-bottom: 1px solid rgba(88, 70, 70, 0.08);
     padding: 14px 0;
     z-index: 1000;
 }
@@ -39,7 +39,7 @@ body {
 }
 
 .logo {
-    color: #7c83ff;
+    color: #7c82ff;
     font-size: 20px;
     font-weight: 600;
 }
@@ -62,7 +62,7 @@ body {
 
 /* ================= HERO ================= */
 .hero {
-    height: 100vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -238,7 +238,7 @@ button {
     padding: 12px 34px;
     border-radius: 30px;
     border: none;
-    background: linear-gradient(135deg, #6366f1, #7c83ff);
+    background: linear-gradient(135deg, #6568f1, #7c83ff);
     color: white;
     cursor: pointer;
     transition: transform 0.3s ease;
