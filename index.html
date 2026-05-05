@@ -3,139 +3,301 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Shuliman Hossain | Portfolio</title>
+    <title>Shuliman Hossain | AI & ML Engineer</title>
+    <meta name="description" content="Shuliman Hossain — AI & Machine Learning Engineer specializing in deep learning, NLP, and intelligent data-driven systems."/>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Background Shapes -->
-<div class="bg-shape shape-1"></div>
-<div class="bg-shape shape-2"></div>
-<div class="bg-shape shape-3"></div>
+<!-- ===== NEURAL NETWORK CANVAS ===== -->
+<canvas id="neural-canvas"></canvas>
 
-<!-- ================= NAVBAR ================= -->
-<header class="navbar">
+<!-- ===== FLOATING PARTICLES ===== -->
+<div class="particles" id="particles"></div>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" id="navbar">
     <div class="nav-container">
-        <div class="logo">Shuliman Hossain</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
+        <div class="logo">
+            <span class="logo-bracket">&lt;</span>Shuliman Hossain<span class="logo-bracket">/&gt;</span>
+        </div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
     </div>
 </header>
 
-<!-- ================= HERO ================= -->
+<!-- ===== HERO ===== -->
 <section id="home" class="hero">
     <div class="hero-content">
-        <h1>Hi, I'm Shuliman Hossain</h1>
-        <p>AI & Machine Learning enthusiast focused on building intelligent, data-driven systems.</p>
- 
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Machine Learning | AI Engineer | Data Science
+        </div>
+        <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Shuliman Hossain</span>
+        </h1>
+        <p class="hero-sub">
+            I am an Machine Learning | AI Engineer | Data Science with a passion for building intelligent systems that solve real-world problems. I specialize in Deep Learning, Artificial Intelligence, and Data Science.
+        </p>
+        <div class="hero-cta">
+            <a href="#projects" class="btn-primary">
+                <i class="fas fa-rocket"></i> View My Work
+            </a>
+            <a href="#contact" class="btn-ghost">
+                <i class="fas fa-paper-plane"></i> Get In Touch
+            </a>
+        </div>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/shuliman-hossain/" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/ShulimanHossain/" class="social-btn"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/shuliman-hossain/" class="social-btn" id="linkedin-btn" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/ShulimanHossain/" class="social-btn" id="github-btn" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+    <div class="hero-visual">
+        <div class="ai-orb">
+            <div class="orb-ring ring-1"></div>
+            <div class="orb-ring ring-2"></div>
+            <div class="orb-ring ring-3"></div>
+            <div class="orb-core">
+                <i class="fas fa-brain"></i>
+            </div>
+        </div>
+        <div class="floating-chip chip-1"><i class="fas fa-microchip"></i> TensorFlow</div>
+        <div class="floating-chip chip-2"><i class="fas fa-layer-group"></i> CNN & ANN</div>
+        <div class="floating-chip chip-3"><i class="fas fa-chart-line"></i> Scikit-learn</div>
+        <div class="floating-chip chip-4"><i class="fas fa-database"></i> Pandas</div>
+    </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+    <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="title-line"></div>
+    </div>
+
+    <div class="about-grid">
+        <div class="about-text-card">
+            <p>
+                I'm an <strong>AI & Machine Learning Engineer</strong> with a deep passion for building intelligent systems that bridge the gap between raw data and actionable insights. My focus spans <span class="highlight">deep learning architectures</span>, <span class="highlight">natural language processing</span>, and <span class="highlight">predictive modeling</span>.
+            </p>
+            <p style="margin-top: 1rem;">
+                With hands-on experience in Python, TensorFlow, PyTorch, and the broader ML ecosystem, I design and train models that tackle real-world challenges — from classification and regression to sequence modeling and computer vision.
+            </p>
+            <p style="margin-top: 1rem;">
+                Beyond ML, I bring strong foundations in <strong>data structures & algorithms</strong> and software development (C, C++, Java), which sharpen my approach to engineering efficient and scalable AI solutions.
+            </p>
+        </div>
+
+        <div class="about-stats">
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-brain"></i></div>
+                <div class="stat-value">10+</div>
+                <div class="stat-label">ML Projects</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-code"></i></div>
+                <div class="stat-value">5+</div>
+                <div class="stat-label">Languages</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-flask"></i></div>
+                <div class="stat-value">3+</div>
+                <div class="stat-label">Years Learning</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-database"></i></div>
+                <div class="stat-value">∞</div>
+                <div class="stat-label">Data Curiosity</div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
-<section id="about" class="section about">
-    <h2 class="center-title">About Me</h2>
-
-    <div class="about-box">
-        <p>
-            I am a data science enthusiast with a growing interest in data analysis, machine learning, and algorithms. I enjoy working with real-world datasets to uncover patterns, extract insights, and build predictive models with proper evaluation.
-        
-            I have hands-on experience with Python, SQL, and core data science libraries including Pandas, NumPy, Scikit-learn, and Matplotlib. Through academic coursework and practical projects, I have worked on data preprocessing, exploratory data analysis, model training, and performance evaluation.
-        </p>
-
-         <p>
-            Alongside data science, I have a strong background in data structures and algorithms and experience developing applications in C, C++, and Java. These experiences have strengthened my problem-solving and analytical skills, and I am continuously learning to apply data science and machine learning techniques to real-world problems.
-        </p>
-    </div>
-</section>
-
-<!-- ================= SKILLS ================= -->
+<!-- ===== SKILLS ===== -->
 <section id="skills" class="section">
-    <h2 class="center-title">Skills & Expertise</h2>
+    <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="title-line"></div>
+    </div>
 
-    <div class="skills-box-container">
-        <div class="skills-box">
-            <h3>Technical & Tools</h3>
-            <ul>
-                <li>Python</li>
-                <li>Pandas & NumPy</li>
-                <li>Scikit-learn</li>
-                <li>MySQL</li>
-                <li>Git & GitHub</li>
-                <li>Jupyter notebook</li>
-                <li>Flask</li>
-            </ul>
+    <div class="skills-grid">
+        <div class="skill-category">
+            <div class="skill-cat-icon"><i class="fas fa-robot"></i></div>
+            <h3>AI & Machine Learning</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">Scikit-learn</span>
+                <span class="skill-tag">Keras</span>
+                <span class="skill-tag">Deep Learning</span>
+                <span class="skill-tag">NLP</span>
+            </div>
         </div>
 
-        <div class="skills-box">
+        <div class="skill-category">
+            <div class="skill-cat-icon"><i class="fas fa-chart-bar"></i></div>
+            <h3>Data Science</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">Matplotlib</span>
+                <span class="skill-tag">Seaborn</span>
+                <span class="skill-tag">Jupyter</span>
+                <span class="skill-tag">SQL / MySQL</span>
+                <span class="skill-tag">EDA</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <div class="skill-cat-icon"><i class="fas fa-server"></i></div>
+            <h3>Engineering & Tools</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">Flask</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">C / C++</span>
+                <span class="skill-tag">Java</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <div class="skill-cat-icon"><i class="fas fa-lightbulb"></i></div>
             <h3>Soft Skills</h3>
-            <ul>
-                <li>Problem Solving</li>
-                <li>Analytical Thinking</li>
-                <li>Team Collaboration</li>
-                <li>Communication</li>
-                <li>Team Leadership</li>
-            </ul>
+            <div class="skill-tags">
+                <span class="skill-tag">Analytical Thinking</span>
+                <span class="skill-tag">Team Collaboration</span>
+                <span class="skill-tag">Communication</span>
+                <span class="skill-tag">Leadership</span>
+                <span class="skill-tag">Research</span>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- ================= PROJECTS ================= -->
+<!-- ===== PROJECTS ===== -->
 <section id="projects" class="section">
-    <h2 class="center-title"> Projects</h2>
+    <div class="section-header">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="title-line"></div>
+    </div>
 
-    <div class="projects-grid">
-        <div class="project-card">
-            <h3>Online Book Shop</h3>
-            <p>An Online Book Shop Web Application built with Flask, MySQL, HTML, and CSS, designed as a database project. It allows users to browse books, manage a shopping cart, place orders, and write reviews, while administrators can manage inventory, revenue, and users.</p>
-            <a href="https://github.com/ShulimanHossain/Online-Book-Shop" target="_blank">View Project ↗</a>
+    <div class="projects-grid" id="projects-grid">
+        <div class="project-card featured">
+            <div class="project-badge ai-badge">ML</div>
+            <div class="project-icon"><i class="fas fa-hand-holding-dollar"></i></div>
+            <h3>CT Scan Image Classification using Deep Learning</h3>
+            <p>Built and evaluated deep learning models stone, tumor and cyst detection in kidney CT scans using Keras and TensorFlow. The project covers data loading, preprocessing, CNN model design, training, and performance analysis with metrics like accuracy, precision, recall, and F1-score.</p>
+            <div class="project-tech">
+                <span>Python</span><span>TensorFlow</span><span>NumPy</span><span>Scikit-learn</span><span>Keras</span>
+            </div>
+            <a href="https://github.com/ShulimanHossain/CT-Based-Multiclass-Kidney-Disease-Classification-Using-Convolutional-Neural-Networks" target="_blank" class="project-link">View Project <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <div class="project-card featured">
+            <div class="project-badge">Featured</div>
+            <div class="project-icon"><i class="fas fa-chart-pie"></i></div>
+            <h3>AI, ML & Data Science Job & Salary Analysis</h3>
+            <p>Comprehensive analysis of AI/ML job market data to identify salary-influencing factors including experience, location, role, and company size. Leverages EDA, visualization, and statistical modeling.</p>
+            <div class="project-tech">
+                <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span>
+            </div>
+            <a href="https://github.com/ShulimanHossain/Salary-Analysis-and-Prediction-in-AI-Machine-Learning-and-Data-Science-Careers" target="_blank" class="project-link">View Project <i class="fas fa-arrow-up-right-from-square"></i></a>
         </div>
 
-        <div class="project-card">
+        <div class="project-card featured">
+            <div class="project-badge ai-badge">ML</div>
+            <div class="project-icon"><i class="fas fa-hand-holding-dollar"></i></div>
+            <h3>Diabetes Analysis and Prediction Using Machine Learning</h3>
+            <p>Applied supervised classification models to predict loan approval outcomes. Covers full ML pipeline: preprocessing, feature engineering, model training, and evaluation using real-world inspired Kaggle data.</p>
+            <div class="project-tech">
+                <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span>
+            </div>
+            <a href="https://github.com/ShulimanHossain/Diabetes-Analysis-and-Prediction-Using-Machine-Learning" target="_blank" class="project-link">View Project <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+        <div class="project-card hidden-card">
+            <div class="project-icon"><i class="fas fa-mug-hot"></i></div>
             <h3>Smart Café Management System</h3>
-            <p>The Smart Café Management System is a web-based application built using Flask and MySQL that automates café operations such as table booking, order management, ingredient stock tracking, and payment handling.</p>
-            <a href="https://github.com/ShulimanHossain/Smart-Coffee-Shop-Interactive-Ordering-Analysis-System-" target="_blank">View Project ↗</a>
-        </div>
-        <div class="project-card hidden">
-            <h3>AI, ML, and Data Science Job & Salary Analysis</h3>
-            <p>The rapid growth of Data Science,Artificial Intelligence (AI), and Machine Learning (ML) has created a high demand for skilled professionals worldwide and salaries for these roles vary different factors such as experience, job title, location, remote ratio, and company size. This project focuses on analyzing a dataset of ,AI, and, ML job informations to identify and understand the key factors that influence salary. By exploring this dataset, the following insights can be observed:</p>
-            <a href="#" target="_blank">View Project ↗</a>
-        </div>
-        <div class="project-card hidden">
-            <h3>DNA Pattern Matching Algorithm Analyzer</h3>
-            <p>The DNA Pattern Matching Algorithm Analyzer is a C++ program designed to compare and analyze different string-matching algorithms on DNA sequences. It allows users to test how efficiently various algorithms—Naive, Knuth-Morris-Pratt (KMP), and Boyer-Moore—can detect a specific DNA pattern within a DNA sequence. This project helps visualize pattern occurrence positions, algorithmic performance, and execution time comparison, making it useful for both bioinformatics and algorithm analysis studies.</p>
-            <a href="https://github.com/ShulimanHossain/DNA-Pattern-Matching-Algorithm-Analyzer" target="_blank">View Project ↗</a>
-        </div>
-        <div class="project-card hidden">
-            <h3>Predictive Analysis of Loan Approval Using Data Science and ML</h3>
-            <p>This is a practice project focused on applying Data Science and Machine Learning techniques to the problem of loan approval prediction. The project uses a synthetic dataset obtained from Kaggle that simulates real-world loan application data. Through exploratory data analysis and supervised classification models, the goal is to strengthen practical skills in data preprocessing, feature analysis, and predictive modeling.</p>
-            <a href="https://github.com/ShulimanHossain/Predictive-Analysis-of-Loan-Approval-Using-Data-Science-and-ML" target="_blank">View Project ↗</a>
-        </div>
-
-        <div class="project-card hidden">
-            <h3>Mock IELTS & GRE Exam Manager</h3>
-            <p>This project simulates the management of a large-scale exam (IELTS/GRE style) using C, POSIX threads, semaphores, mutexes, and inter-process communication. It demonstrates process synchronization, concurrency control, and IPC through a real-world inspired scenario</p>
-            <a href="https://github.com/ShulimanHossain/IELTS-and-GRE-exams-Problem-CSE325-project" target="_blank">View Project ↗</a>
-        </div>
-
-        <div class="project-card hidden">
-            <h3>Automated Coffee Shop Management System</h3>
-            <p>An efficient and user-friendly Coffee Shop Management System written in C. This system streamlines administrative and customer operations, offering menu management, order handling, stock updates, and sales reporting.</p>
-            <a href="https://github.com/ShulimanHossain/Automated-Coffee-Shop" target="_blank">View Project ↗</a>
+            <p>Web-based system automating café operations: table booking, order management, ingredient stock tracking, and payment handling using Flask and MySQL.</p>
+            <div class="project-tech">
+                <span>Flask</span><span>MySQL</span><span>Python</span>
+            </div>
+            <a href="https://github.com/ShulimanHossain/Smart-Coffee-Shop-Interactive-Ordering-Analysis-System-" target="_blank" class="project-link">View Project <i class="fas fa-arrow-up-right-from-square"></i></a>
         </div>
     </div>
 
-    <button id="viewAllBtn">View All Projects</button>
+    <a href="https://github.com/ShulimanHossain?tab=repositories" target="_blank" id="viewAllBtn" class="btn-primary" style="margin: 48px auto 0; display: inline-flex; text-decoration: none;">
+        <i class="fab fa-github"></i> View All Projects on GitHub
+    </a>
 </section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section">
+    <div class="section-header">
+        <span class="section-tag">Let's Connect</span>
+        <div class="title-line"></div>
+    </div>
+    <div class="contact-container">
+        <p class="contact-sub">I'm always open to discussing AI/ML research, collaboration opportunities, or just talking about the latest in artificial intelligence.</p>
+        <div class="contact-links">
+            <a href="https://www.linkedin.com/in/shuliman-hossain/" target="_blank" class="contact-card" id="contact-linkedin">
+                <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                <div>
+                    <div class="contact-label">LinkedIn</div>
+                    <div class="contact-val">shuliman-hossain</div>
+                </div>
+            </a>
+            <a href="https://github.com/ShulimanHossain/" target="_blank" class="contact-card" id="contact-github">
+                <div class="contact-icon"><i class="fab fa-github"></i></div>
+                <div>
+                    <div class="contact-label">GitHub</div>
+                    <div class="contact-val">ShulimanHossain</div>
+                </div>
+            </a>
+            <a href="mailto:[EMAIL_ADDRESS]" class="contact-card" id="contact-email">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                    <div class="contact-label">Email</div>
+                    <div class="contact-val">[EMAIL_ADDRESS]</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="logo" style="font-size:18px;">
+            <span class="logo-bracket">&lt;</span>Shuliman Hossain<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-copy">© 2026 Shuliman Hossain · AI & ML Engineer</p>
+        <div class="social-links" style="margin-top:0;">
+            <a href="https://www.linkedin.com/in/shuliman-hossain/" class="social-btn" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/ShulimanHossain/" class="social-btn" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</footer>
 
 <script src="script.js"></script>
 </body>
