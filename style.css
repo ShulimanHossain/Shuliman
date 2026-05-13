@@ -791,7 +791,11 @@ body {
     .hero { flex-direction: column; text-align: center; padding-top: 120px; }
     .hero-cta, .social-links { justify-content: center; }
     .hero-visual { width: 320px; height: 320px; flex: none; }
-    .chip-1, .chip-2, .chip-3, .chip-4 { display: none; }
+    /* Reposition chips to fit the smaller 320px container */
+    .chip-1 { top: 10px;  left: -10px;  font-size: 11px; padding: 6px 10px; }
+    .chip-2 { top: 10px;  right: -10px; font-size: 11px; padding: 6px 10px; }
+    .chip-3 { bottom: 20px; left: -10px;  font-size: 11px; padding: 6px 10px; }
+    .chip-4 { bottom: 20px; right: -10px; font-size: 11px; padding: 6px 10px; }
     .about-grid { grid-template-columns: 1fr; }
     .about-stats { grid-template-columns: repeat(4, 1fr); }
     .contact-links { grid-template-columns: 1fr; max-width: 480px; }
@@ -801,7 +805,12 @@ body {
     .section { padding: 80px 6%; }
     .hero { padding: 100px 6% 60px; }
     .about-stats { grid-template-columns: 1fr 1fr; }
-    .hero-visual { display: none; }
+    /* Keep hero-visual visible but shrink it further for small phones */
+    .hero-visual { width: 260px; height: 260px; }
+    .chip-1 { top: 5px;   left: -5px;   font-size: 10px; padding: 5px 8px; }
+    .chip-2 { top: 5px;   right: -5px;  font-size: 10px; padding: 5px 8px; }
+    .chip-3 { bottom: 10px; left: -5px;  font-size: 10px; padding: 5px 8px; }
+    .chip-4 { bottom: 10px; right: -5px; font-size: 10px; padding: 5px 8px; }
     .nav-links { display: none; }
     .footer-inner { flex-direction: column; align-items: center; text-align: center; }
     .contact-links { grid-template-columns: 1fr; max-width: 100%; }
