@@ -199,3 +199,13 @@ style.textContent = `
 }
 `;
 document.head.appendChild(style);
+
+// ===== EMAIL CONTACT CARD =====
+// Prevent smooth-scroll from intercepting mailto: and triggering scroll-to-top
+const emailCard = document.getElementById('contact-email');
+if (emailCard) {
+    emailCard.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.location.href = 'mailto:shulimanhossain@gmail.com';
+    });
+}
